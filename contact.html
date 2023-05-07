@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <link href="https://fonts.googlepis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>   
+<body>
+    <!-- Navigation bar -->
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html"> Home </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="skills.html"> Skills </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="work experience.html"> Work Experience </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="project.html"> Projects </a>
+                </div>
+
+            </div>
+            <div class="right-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="contact.html"> Contact </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html"> About </a>
+                </div> 
+            </div>
+        </div>        
+    </div>
+
+    <!-- Page's content -->
+    <div class="content-wrapper">
+        <div class="page-items-wrapper">
+            
+            <div class="page-item-wrapper">
+                <div class="page-img-background" style="background-image: url(image/45579.png);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a href="https://www.instagram.com/milo_is_not_real/"> instagram </a>
+                    </div>
+
+                    <div class="subtitle">
+                        This is where I post my taken photos or photos of mine and some more update.
+                    </div>
+                </div>     
+            </div>
+
+            <div class="page-item-wrapper">
+                <div class="page-img-background" style="background-image: url(image/26889.png);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a> Contact </a>
+                    </div>
+
+                    <div class="subtitle">
+                        <p>l.akkaraprud@gmail.com</p>
+                        <p>+491628321954</p>
+                        <p>MC 241, College Ring 6, Constructor University Bremen, 28759, Germany</p>
+                    </div>
+                </div>     
+            </div>
+
+            <div class="page-item-wrapper">
+                <div class="page-img-background" style="background-image: url(image/45468.png);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a href="https://www.facebook.com/latthapol.akkaraprud.1"> Facebook </a>
+                    </div>
+
+                    <div class="subtitle">
+                        This is where I sometimes post my longer rather thoughtful text post.
+                    </div>
+                </div>     
+            </div>
+            
+            <div class="page-item-wrapper">
+                <div class="page-img-background" style="background-image: url(image/45539.png);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a href="https://twitter.com/LatthapolA"> Twitter </a>
+                    </div>
+
+                    <div class="subtitle">
+                        I don't post anything here though, mostly it is to follow up news.
+                    </div>
+                </div>     
+            </div>
+
+            <div class="page-item-wrapper">
+                <div class="page-img-background" style="background-image: url(image/45513.png);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a href="https://www.youtube.com/@milosdiary7582"> YouTube </a>
+                    </div>
+
+                    <div class="subtitle">
+                        This is where I post my video about random topics including gaming, music, and lifestyle.
+                    </div>
+                </div>     
+            </div>
+
+            <div class="page-item-wrapper">
+                <div class="page-img-background" style="background-image: url(image/45404.png);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a href="https://www.linkedin.com/in/latthapol-akkaraprud-8a318b247/"> LinkedIn </a>
+                    </div>
+
+                    <div class="subtitle">
+                        This will be where many things will be shown in the future, but for now it's quite blank.
+                    </div>
+                </div>     
+            </div>       
+
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.page-item-wrapper')
+
+    portfolioItems.forEach(portfolioItems => {
+        portfolioItems.addEventListener('mouseover', () => {
+            console.log(portfolioItems);
+            //console.log(portfolioItems.childNodes);
+            //console.log(portfolioItems.childNodes[1].classList);
+            portfolioItems.childNodes[1].classList.add('img-darken');
+        })
+    })
+
+    portfolioItems.forEach(portfolioItems => {
+        portfolioItems.addEventListener('mouseout', () => {
+            //console.log(portfolioItems);
+            //console.log(portfolioItems.childNodes);
+            //console.log(portfolioItems.childNodes[1].classList);
+            portfolioItems.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>
