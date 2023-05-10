@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"max-width:3840px; min-width:480px>
+    <title>Projects</title>
+    <link href="https://fonts.googlepis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>   
+<body>
+    <!-- Navigation bar -->
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html"> Home </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="skills.html"> Skills </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="work experience.html"> Work Experience </a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="project.html"> Projects </a>
+                </div>
+
+            </div>
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="contact.html"> Contact </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html"> About </a>
+                </div> 
+            </div>
+        </div>        
+    </div>
+
+    <!-- Page's content -->
+    <div class="content-wrapper">
+        <div class="project-items-wrapper">
+            
+            <div class="page-item-wrapper">
+                <div class="project-img-background" style="background-image: url(image/fph4.JPG);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a href="project1.html"> High school final project </a>
+                    </div>
+
+                    <div class="subtitle">
+                        The most challenging and time comsuming project of them all. Multiple robots were made and behind these are countless trial-and-errors that didn't go into production.
+                    </div>
+                </div>     
+            </div>
+
+            <div class="page-item-wrapper">
+                <div class="project-img-background" style="background-image: url(image/cpv2.png);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a href="project2.html"> Electric ChairCooter </a>
+                    </div>
+
+                    <div class="subtitle">
+                        Stems from boredom in early 2021 befire I get to fly to Germany. Initially it was meant to save my cost of transportation in German city areas but the battery pack size ended up exceeding airline's 
+                        allowance.
+                    </div>
+                </div>     
+            </div>
+
+            <div class="page-item-wrapper">
+                <div class="project-img-background" style="background-image: url(image/apv1.png);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a href="project3.html"> Air Purifyer </a>
+                    </div>
+
+                    <div class="subtitle">
+                        Done in mid 2019 as an idea of air purifying solution from an event at FabCafe Bangkok. The filter was designed by other students while the casing and everything else was done by me.
+                    </div>
+                </div>     
+            </div>
+
+            <div class="page-item-wrapper">
+                <div class="project-img-background" style="background-image: url(image/Fan\ Fundamental.JPG);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a href="project4.html"> Harmonized Fan </a>
+                    </div>
+
+                    <div class="subtitle">
+                        Tri-layer fans produce sounds at the specific frequenzy. Those sounds add up to make music chords. So far, major, minor, augmented, and diminished chord variants were made and tested.
+                    </div>
+                </div>     
+            </div>       
+            
+            <div class="page-item-wrapper">
+                <div class="project-img-background" style="background-image: url(image/qps1.png);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a href="project5.html"> Face Mask </a>
+                    </div>
+
+                    <div class="subtitle">
+                        During early lockdown when the demand for facemask is high, I printed these face mask structures and gave them to hospitals that needed them for free. It felt really good to be able 
+                        to help the society even if it's only printing them a few hundreds face masks.
+                    </div>
+                </div>     
+            </div>    
+            
+            <div class="page-item-wrapper">
+                <div class="project-img-background" style="background-image: url(image/Algae01.JPG);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a href="project6.html"> Air Freshener </a>
+                    </div>
+
+                    <div class="subtitle">
+                        I suffocate a lot in any close room due to my high metabolic cycle, hence the need for extra oxygen in the air amd the birth of this project. It would be very useful during German winter 
+                        when I have to keep the window close and still maintain oxygen level.
+                    </div>
+                </div>     
+            </div>    
+
+
+        </div>
+    </div>
+
+    
+
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.page-item-wrapper')
+
+    portfolioItems.forEach(portfolioItems => {
+        portfolioItems.addEventListener('mouseover', () => {
+            console.log(portfolioItems);
+            //console.log(portfolioItems.childNodes);
+            //console.log(portfolioItems.childNodes[1].classList);
+            portfolioItems.childNodes[1].classList.add('img-darken');
+        })
+    })
+
+    portfolioItems.forEach(portfolioItems => {
+        portfolioItems.addEventListener('mouseout', () => {
+            //console.log(portfolioItems);
+            //console.log(portfolioItems.childNodes);
+            //console.log(portfolioItems.childNodes[1].classList);
+            portfolioItems.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>

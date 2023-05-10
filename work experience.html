@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"max-width:3840px; min-width:480px>
+    <title>Work Experience</title>
+    <link href="https://fonts.googlepis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>   
+<body>
+    <!-- Navigation bar -->
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html"> Home </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="skills.html"> Skills </a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="work experience.html"> Work Experience </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="project.html"> Projects </a>
+                </div>
+
+            </div>
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="contact.html"> Contact </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html"> About </a>
+                </div> 
+            </div>
+        </div>        
+    </div>
+
+    <!-- Page's content -->
+    <div class="content-wrapper">
+            
+            <div class="page-item-wrapper">
+                <div class="page-img-background-s" style="background-image: url(image/CT\ Asia\ Robotics.webp);">
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="page-section-wrapper">
+                        <a> March - May 2018 CT Asia Robotics: Internship; mechanical designer </a>
+                    </div>
+
+                    <div class="subtitle">
+                        <p>As a part of school program, an internship during the summer break before 12th grade was mandatory. To comply with the final graduation project that I have in 
+                            mind in advance, I chose to apply for an internship in an R&D robot company located in Bangkok. I learned to use 3D design program such as Solidwork and Cura 
+                            to help design parts of their project at the time. The mandatory internship period was one month but to fully develop, I spent the whole summer break working ther. 
+                        </p>
+                        <p>Later on the knowledge obtained from this intership was crucial to my final project as planned.</p> 
+                    </div>
+                </div>     
+            </div>
+
+            
+    </div>
+
+    
+
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.page-item-wrapper')
+
+    portfolioItems.forEach(portfolioItems => {
+        portfolioItems.addEventListener('mouseover', () => {
+            console.log(portfolioItems);
+            //console.log(portfolioItems.childNodes);
+            //console.log(portfolioItems.childNodes[1].classList);
+            portfolioItems.childNodes[1].classList.add('img-darken');
+        })
+    })
+
+    portfolioItems.forEach(portfolioItems => {
+        portfolioItems.addEventListener('mouseout', () => {
+            //console.log(portfolioItems);
+            //console.log(portfolioItems.childNodes);
+            //console.log(portfolioItems.childNodes[1].classList);
+            portfolioItems.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>
