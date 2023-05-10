@@ -221,7 +221,18 @@ body {
     color: transparent;
 }
 
+.img-text-wrapper-v .subtitle{
+    transition: 1s;
+    font-weight: 500;
+    color: transparent;
+}
+
 .img-text-wrapper:hover .subtitle{
+    font-weight: 500;
+    color: white;
+}
+
+.img-text-wrapper-v:hover .subtitle{
     font-weight: 500;
     color: white;
 }
